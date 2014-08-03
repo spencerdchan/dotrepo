@@ -4,7 +4,8 @@
 
 
 " starting default colorscheme
-colorscheme peachpuff
+colorscheme default
+set t_Co=256
 
 " Coloring Commands
 highlight Comment ctermfg=darkgreen
