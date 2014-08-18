@@ -23,6 +23,7 @@ set showmatch " flashes matching paren when one is typed
 " search
 set incsearch
 set hlsearch
+set ignorecase
 set smartcase
 set showcmd
 
