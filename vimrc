@@ -32,6 +32,9 @@ set backspace=2
 " turn on the ruler that gives you row and col position at the bottom
 set ruler
 
+set list
+set listchars=eol:\ ,tab:»-,trail:·,nbsp:‗
+
 " treat .phpt files as .php files
 au BufRead,BufNewFile *.phpt set filetype=php
 
@@ -59,6 +62,9 @@ autocmd FileType cpp set ts=2|set shiftwidth=2|set expandtab|set autoindent|set 
 autocmd FileType h set ts=2|set shiftwidth=2|set expandtab|set autoindent|set softtabstop=2
 
 autocmd FileType cmake set ts=2|set shiftwidth=2|set expandtab|set autoindent|set softtabstop=2
+
+" tsv
+au BufRead *.tsv set noexpandtab|set tabstop=16
 
 " Tab size for protobufs and thrift
 au BufRead,BufNewFile *.thrift set filetype=thrift

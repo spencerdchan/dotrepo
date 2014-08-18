@@ -1,5 +1,7 @@
 set -o vi
 
+alias c="clear"
+
 # git
 alias gl="git log --pretty=format:'%C(yellow)%h %Cred%ar %Cblue%an%Cgreen%d %Creset%s'"
 alias gs="clear; git show"
