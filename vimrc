@@ -7,11 +7,6 @@
 colorscheme default
 set t_Co=256
 
-" Coloring Commands
-highlight Comment ctermfg=darkgreen
-highlight Constant ctermfg=darkred
-highlight Type ctermfg=yellow
-
 syntax on
 
 " defaults
