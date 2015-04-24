@@ -68,3 +68,6 @@ autocmd FileType thrift :setlocal sw=2 ts=2 sts=2
 autocmd FileType thrift set ts=2|set shiftwidth=2|set expandtab|set autoindent|set softtabstop=2
 au! BufRead,BufNewFile *.proto set filetype=proto
 autocmd FileType proto set ts=2|set shiftwidth=2|set expandtab|set autoindent|set softtabstop=2
+
+set grepprg=ag\ --nogroup\ --nocolor\ --follow\ --ignore=*.swf
+
