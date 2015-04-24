@@ -9,7 +9,7 @@ alias gst="clear; git status"
 alias gd="clear; git status; git diff"
 alias gdc="clear; git status; git diff --cached"
 alias gco="git checkout"
-alias gpull="git pull --rebase"
+alias pull="git pull --rebase"
 
 # video
 alias mpv="/Applications/mpv.app/Contents/MacOS/mpv --af=scaletempo"
