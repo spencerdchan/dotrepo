@@ -69,5 +69,8 @@ autocmd FileType thrift set ts=2|set shiftwidth=2|set expandtab|set autoindent|s
 au! BufRead,BufNewFile *.proto set filetype=proto
 autocmd FileType proto set ts=2|set shiftwidth=2|set expandtab|set autoindent|set softtabstop=2
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 set grepprg=ag\ --nogroup\ --nocolor\ --follow\ --ignore=*.swf
 
