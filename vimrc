@@ -73,6 +73,6 @@ autocmd FileType proto set ts=2|set shiftwidth=2|set expandtab|set autoindent|se
 cmap w!! w !sudo tee > /dev/null %
 
 set grepprg=ag\ --nogroup\ --nocolor\ --follow\ --ignore=*.swf
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-nnoremap <C-j> :cn<CR>
-nnoremap <C-k> :cp<CR>
+nnoremap K *:grep "<C-R><C-W>"<CR>:cw<CR><CR>
+nnoremap <C-J> :cn<CR>zz
+nnoremap <C-K> :cp<CR>zz

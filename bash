@@ -11,6 +11,7 @@ alias gdc="clear; git status; git diff --cached"
 alias gco="git checkout"
 alias gpush="git pull --rebase && git push"
 alias pull="git pull --rebase"
+alias gcaa="git commit -a --amend --no-edit"
 
 # video
 alias mpv="/Applications/mpv.app/Contents/MacOS/mpv --af=scaletempo"
