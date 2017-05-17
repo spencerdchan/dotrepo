@@ -17,3 +17,11 @@ alias gcaa="git commit -a --amend --no-edit"
 alias mpv="/Applications/mpv.app/Contents/MacOS/mpv --af=scaletempo"
 
 source ~/.fzf.bash 2> /dev/null
+
+function parse_git_dirty {
+  [[ $(git status --porcelain 2> /dev/null | tail -n1) != "" ]] && echo " *"
+}
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/(\1$(parse_git_dirty))/"
+}
+export PS1="\[\033[32m\]\u@\h\[\033[00m\] \w\[\033[32m\] \$(parse_git_branch ' %s')\[\033[30m\] \$\[\033[00m\] "
